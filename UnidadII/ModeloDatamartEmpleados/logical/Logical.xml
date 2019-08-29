@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="0DA8BF23-25E3-669F-6522-3110D7371B27" mainViewID="1FDA4D3A-8657-CE2A-DF8B-45C9F8455315">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:39:11 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="C31D68DB-E8D3-CC61-5C14-DF2AFB8B2689">
+<createdBy>Marín</createdBy>
+<modifiedBy>Marín</modifiedBy>
+<createdTime>2019-08-21 05:39:31 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3739F71C-189C-76B5-EFAE-0CDF85432ABD" otype="Table" vid="5722A601-32A0-28B1-7A58-06999FA5A78C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="617" y="128" width="232" height="122"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5A683CA2-A020-0840-3434-DEC90C745079" otype="Table" vid="5B1850F3-4BDB-F419-81C3-E6EE239B15BF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="601" y="272" width="274" height="250"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7A8E7EF7-A4B6-08D7-9736-084CDF7BB682" otype="Table" vid="9B57AA1C-4EFF-182B-A12B-A174FD889027">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="296" y="131" width="261" height="352"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="ACBA1561-AA2C-2768-300D-E8961D44A2EF" otype="Table" vid="06941522-2A9B-4E2A-66A2-85967C88D313">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="1250" width="261" height="180"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C4FD38AF-FBDA-6ADE-6014-59CA5C081EB8" otype="Table" vid="FA4DA9B7-9BA6-1B78-8146-E1D4CFF637D9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="331" y="1250" width="332" height="194"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="FA0FC1A4-7D9C-1793-FC23-FC53B9D69C63" otype="Table" vid="78D53610-BF5D-BB61-EB97-F42703245EBE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="924" y="118" width="341" height="226"/>
+</OView>
+</objectViews>
+</Diagram>

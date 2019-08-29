@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACBA1561-AA2C-2768-300D-E8961D44A2EF" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="EMPLOYEES_20190716">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMPLOYEES_20190716</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>4EE1AF3E-9214-C487-6223-49EFDDA2CFDD</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="503DB4FA-D26B-71E4-0619-D68951F6DF62">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>C01CD64A-A61A-4AB3-1E07-EA109BF63E13</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="8A8FD28D-F7A0-B074-ECAF-AD5859F9210F">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>FIRST_NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>F3F47D46-9F56-72E7-A676-9C111A6384B5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="2FD9AD68-4611-E051-FF99-B46DF7ED8880">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>LAST_NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>14EFFFB7-19C2-D2C9-6986-609A44FD6C22</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="A5D2493B-5BDD-07D6-1B94-99BE32EEE076">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>D241C984-D556-5D03-242F-2DD76D01F382</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="BE0D6B30-AADD-CD51-4016-225A12E669BD">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>29D28ACC-1F83-4B20-4292-E7146BEE3C49</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIRE_DATE" id="6677D9B3-EC96-C4E9-B3E6-51D484761ACB">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>HIRE_DATE</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>FEA397B3-BB65-8893-841B-D6F7970100B2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_ID" id="82AAA7E3-D629-3C2C-183F-24C07291C286">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>5DE1B07F-E000-169A-330F-BC6CEA1E26DB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALARY" id="78C8ED17-B0D9-AE38-B7BC-73B366FAE918">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>SALARY</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>8B05AF49-121B-94C4-C681-3335C4D1EB3F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMISSION_PCT" id="FDFC6893-56CE-ECF7-291A-224B740CCDE9">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>COMMISSION_PCT</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>49FF96A6-27DA-4070-987F-90753E236B16</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_ID" id="EABE1FDB-559A-079B-7F95-D4D5A76287AA">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>ECA682BC-20A1-3812-F123-02078B2DDDEA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_ID" id="0122B375-88C6-168A-76CC-3D482931DF39">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES_20190716</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>9959DF25-B354-35E8-147D-F357903845D3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

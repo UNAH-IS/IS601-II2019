@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="JOBS" directorySegmentName="seg_0" id="3739F71C-189C-76B5-EFAE-0CDF85432ABD">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:56 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3B99E9E3-3FD1-87C9-5E2E-E551B12416B7</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MAX_SALARY" id="0259941F-4F39-D50F-721F-ED99FDADF48E">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_TITLE" id="56708DB3-8B06-D443-C29D-CE1C323E477E">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MIN_SALARY" id="779B13C5-9819-CBE4-7251-D5F273568DFE">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_ID" id="B7085F39-57BD-5707-B86E-E3EE0F4BE3CF">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="JOB_ID_PK" id="D7570CB8-79B6-F76A-C8B4-0A579E27385C">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="JOB_ID_PK" id="C92EB158-37B5-DD28-2741-7403D02CD012">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+<existingIndex>D7570CB8-79B6-F76A-C8B4-0A579E27385C</existingIndex>
+<indexSegment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

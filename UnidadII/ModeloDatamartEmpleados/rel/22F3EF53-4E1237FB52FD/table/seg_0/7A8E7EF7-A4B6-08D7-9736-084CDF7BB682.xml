@@ -1,0 +1,324 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A8E7EF7-A4B6-08D7-9736-084CDF7BB682" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="EMPLOYEES">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMPLOYEES</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>employees table. Contains 107 rows. References with departments,&lt;br/&gt;jobs, job_history tables. Contains a self reference.</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>2A14FCC4-3516-1799-84EA-396E57814A73</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="49AA3383-53E1-052B-61A7-78761DF64711">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Primary key of employees table.</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>49EB5B01-43EB-92BC-A883-2B35B2A015D4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="36A2D6D8-FB88-3C75-B6CB-69EB61ABAF50">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>FIRST_NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>First name of the employee. A not null column.</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>C04CA6A5-142C-95CD-CC2C-B534C7BAF524</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="34B98269-4E5A-F9CC-42F6-FD354BE38DCB">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>LAST_NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Last name of the employee. A not null column.</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>1DEF8444-81BF-7900-07FB-F176CDE61C7F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_LAST_NAME_NN</notNullConstraintName>
+</Column>
+<Column name="EMAIL" id="26F48FE9-6476-8058-1B37-13DDAF661570">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Email id of the employee</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>E466D6DE-8523-630C-56F9-59407B5D83A5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_EMAIL_NN</notNullConstraintName>
+</Column>
+<Column name="PHONE_NUMBER" id="8D629307-2B12-4D20-9B90-2478542864AA">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Phone number of the employee; includes country code and area code</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>B94ECAFD-7C2E-E586-4FB2-BF52C80AC721</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIRE_DATE" id="4370EE39-2628-3A57-3234-C09C4878F113">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>HIRE_DATE</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Date when the employee started on this job. A not null column.</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>DD95FAA1-A6D1-46DC-F124-5A8EFD792DA1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_HIRE_DATE_NN</notNullConstraintName>
+</Column>
+<Column name="JOB_ID" id="8DCB6460-932E-E28F-D6DD-BEC93FFD35E1">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Current job of the employee; foreign key to job_id column of the&lt;br/&gt;jobs table. A not null column.</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>43ED2F40-AC07-ACDE-C14D-12A698FAE93B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_JOB_NN</notNullConstraintName>
+</Column>
+<Column name="SALARY" id="E5479F68-9500-6A05-6D2E-864D7E8E54B0">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>SALARY</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Monthly salary of the employee. Must be greater&lt;br/&gt;than zero (enforced by constraint emp_salary_min)</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>200D1CA8-886B-9392-4585-DCD83DE832C2</importedID>
+<constraintName>EMP_SALARY_MIN</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="salary &gt; 0"/>
+<implementationDef dbType="Oracle Database 11g" definition="salary &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMISSION_PCT" id="AC6871E8-7ED1-8CE7-8ACC-4F48FA26437D">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>COMMISSION_PCT</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Commission percentage of the employee; Only employees in sales&lt;br/&gt;department elgible for commission percentage</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>F46A5A0E-08E3-C5C4-0747-8B91B1B7F9F9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_ID" id="2F1C548A-19B1-F454-BC16-E9C67675AD61">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Manager id of the employee; has same domain as manager_id in&lt;br/&gt;departments table. Foreign key to employee_id column of employees table.&lt;br/&gt;(useful for reflexive joins and CONNECT BY query)</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>88C53F95-C2C5-A63C-7FF5-6EB579322EB3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_ID" id="BD07A7D7-82BB-77BC-D065-D8DC69B81E34">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Department id where employee works; foreign key to department_id&lt;br/&gt;column of the departments table</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>5553EBF1-3DFF-980F-E27F-A6D8047B1F66</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DFAC03D3-1CD9-F301-BFDE-5E1D06410CEC" name="EMP_EMP_ID_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMP_ID_PK</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>D7E17DB2-0649-F957-4570-0B129E103D08</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49AA3383-53E1-052B-61A7-78761DF64711"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3548C8B3-F836-4B35-B790-3B0054B3BD27" name="EMP_EMAIL_UK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMAIL_UK</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>918E158F-2356-445F-76CA-0692359F9CE8</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26F48FE9-6476-8058-1B37-13DDAF661570"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8979FA41-F454-A63B-E97E-AF07A2EA3418" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="EMP_DEPARTMENT_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_DEPARTMENT_IX</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>81E0D06B-8C70-F392-FFA0-1B8161A89DDE</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD07A7D7-82BB-77BC-D065-D8DC69B81E34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8AC8B8F-0DFE-95F4-F0C5-3FE56F5DEA05" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="EMP_EMAIL_UK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMAIL_UK</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>B1C6DCA3-1882-36F2-A4F4-8CC6700B7CF4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26F48FE9-6476-8058-1B37-13DDAF661570"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2B05E2C-D3BB-B768-7D16-29269B309787" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="EMP_EMP_ID_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMP_ID_PK</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>37C762AC-A427-A932-CE94-445EFC03906E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49AA3383-53E1-052B-61A7-78761DF64711"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F51B138-6AEC-F851-B49A-469D3375D38A" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="EMP_JOB_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_JOB_IX</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>DFF1171B-6035-525C-7980-B589A01DDD0E</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DCB6460-932E-E28F-D6DD-BEC93FFD35E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD8422D7-2306-205C-4BB8-EA1625AF84EC" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="EMP_MANAGER_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_MANAGER_IX</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>EB7DD599-3118-7151-D287-904F6AD71B5B</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F1C548A-19B1-F454-BC16-E9C67675AD61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D0087B7-E593-7FB5-EC27-C75A800FD0A2" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="EMP_NAME_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_NAME_IX</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>D1418A69-F632-DA4C-831D-E84233F20367</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34B98269-4E5A-F9CC-42F6-FD354BE38DCB"/>
+<colUsage columnID="36A2D6D8-FB88-3C75-B6CB-69EB61ABAF50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

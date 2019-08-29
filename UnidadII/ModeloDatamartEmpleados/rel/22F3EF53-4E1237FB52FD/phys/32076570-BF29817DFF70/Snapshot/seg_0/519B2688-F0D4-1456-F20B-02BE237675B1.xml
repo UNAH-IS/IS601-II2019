@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SnapshotOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.SnapshotOraclev11g" name="MVW_EMPLEADOS" directorySegmentName="seg_0" id="519B2688-F0D4-1456-F20B-02BE237675B1">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>MVW_EMPLEADOS</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:56 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<action>ON DEMAND</action>
+<defaultSegment>NO</defaultSegment>
+<refresh>YES</refresh>
+<refreshType>FORCE</refreshType>
+<subquery>SELECT A.EMPLOYEE_ID,&lt;br&gt;      A.FIRST_NAME||&apos; &apos;||A.LAST_NAME AS NAME,&lt;br&gt;      --A.JOB_ID,&lt;br&gt;      B.JOB_TITLE,&lt;br&gt;      --A.DEPARTMENT_ID,&lt;br&gt;      C.DEPARTMENT_NAME,&lt;br&gt;       C.LOCATION_ID,&lt;br&gt;       F.CITY,&lt;br&gt;       F.COUNTRY_ID,&lt;br&gt;       G.COUNTRY_NAME,&lt;br&gt;       G.REGION_ID,&lt;br&gt;       H.REGION_NAME,&lt;br&gt;       D.FIRST_NAME||&apos; &apos;||D.LAST_NAME AS MANAGER_NAME,&lt;br&gt;       E.FIRST_NAME||&apos; &apos;||E.LAST_NAME AS MANAGER_OF_MANAGER_NAME&lt;br&gt;&lt;br&gt;FROM EMPLOYEES A&lt;br&gt;INNER JOIN JOBS B&lt;br&gt;ON (A.JOB_ID = B.JOB_ID)&lt;br&gt;LEFT JOIN DEPARTMENTS C&lt;br&gt;on A.DEPARTMENT_ID = C.DEPARTMENT_ID&lt;br&gt;LEFT JOIN EMPLOYEES D&lt;br&gt;ON (D.EMPLOYEE_ID = A.MANAGER_ID)&lt;br&gt;LEFT JOIN EMPLOYEES E&lt;br&gt;ON (D.MANAGER_ID = E.EMPLOYEE_ID)&lt;br&gt;LEFT JOIN LOCATIONS F&lt;br&gt;ON (C.LOCATION_ID = F.LOCATION_ID)&lt;br&gt;LEFT JOIN COUNTRIES G&lt;br&gt;ON (F.COUNTRY_ID = G.COUNTRY_ID)&lt;br&gt;LEFT JOIN REGIONS H&lt;br&gt;ON (G.REGION_ID = H.REGION_ID)</subquery>
+<subqueryChanged>false</subqueryChanged>
+<subqueryNeedsMigration>false</subqueryNeedsMigration>
+<tablespace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tablespace>
+<useIndex>YES</useIndex>
+<with></with>
+</SnapshotOraclev11g>

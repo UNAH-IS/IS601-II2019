@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3739F71C-189C-76B5-EFAE-0CDF85432ABD" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="JOBS">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOBS</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>jobs table with job titles and salary ranges. Contains 19 rows.&lt;br/&gt;References with employees and job_history table.</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>BFA072BF-B148-4142-5263-1E433086808B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOB_ID" id="B7085F39-57BD-5707-B86E-E3EE0F4BE3CF">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Primary key of jobs table.</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>A353C6E1-9792-17E7-D78C-B6C42B6DDC98</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_TITLE" id="56708DB3-8B06-D443-C29D-CE1C323E477E">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>JOB_TITLE</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>A not null column that shows job title, e.g. AD_VP, FI_ACCOUNTANT</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>EC2A2AB0-A33A-D891-8353-292B44111D5C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 BYTE</dataTypeSize>
+<ownDataTypeParameters>35 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JOB_TITLE_NN</notNullConstraintName>
+</Column>
+<Column name="MIN_SALARY" id="779B13C5-9819-CBE4-7251-D5F273568DFE">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>MIN_SALARY</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Minimum salary for a job title.</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>48F431F5-9830-7920-802F-E51E011BB545</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_SALARY" id="0259941F-4F39-D50F-721F-ED99FDADF48E">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>MAX_SALARY</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>Maximum salary for a job title</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>738D311F-4519-B9CA-6922-242FC38D2DCB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C92EB158-37B5-DD28-2741-7403D02CD012" name="JOB_ID_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOB_ID_PK</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>2200EF60-9B58-8D2C-6C45-142DABBEFE3D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7085F39-57BD-5707-B86E-E3EE0F4BE3CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7570CB8-79B6-F76A-C8B4-0A579E27385C" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="JOB_ID_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOB_ID_PK</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>A312990E-69EC-E48B-51FD-2C4816641C3B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7085F39-57BD-5707-B86E-E3EE0F4BE3CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="SchemaObject" objectID="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="DWH_HR" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.SchemaObject" propertyParentId="22F3EF53-7721-BDB1-70D6-4E1237FB52FD" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="5A683CA2-A020-0840-3434-DEC90C745079" name="DEPARTMENTS" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="22F3EF53-7721-BDB1-70D6-4E1237FB52FD" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="7A8E7EF7-A4B6-08D7-9736-084CDF7BB682" name="EMPLOYEES" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="22F3EF53-7721-BDB1-70D6-4E1237FB52FD" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="ACBA1561-AA2C-2768-300D-E8961D44A2EF" name="EMPLOYEES_20190716" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="22F3EF53-7721-BDB1-70D6-4E1237FB52FD" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="FA0FC1A4-7D9C-1793-FC23-FC53B9D69C63" name="JOB_HISTORY" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="22F3EF53-7721-BDB1-70D6-4E1237FB52FD" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="3739F71C-189C-76B5-EFAE-0CDF85432ABD" name="JOBS" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="22F3EF53-7721-BDB1-70D6-4E1237FB52FD" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="C4FD38AF-FBDA-6ADE-6014-59CA5C081EB8" name="MVW_EMPLEADOS" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="22F3EF53-7721-BDB1-70D6-4E1237FB52FD" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMPLOYEES_20190716" directorySegmentName="seg_0" id="ACBA1561-AA2C-2768-300D-E8961D44A2EF">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:56 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3B99E9E3-3FD1-87C9-5E2E-E551B12416B7</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEPARTMENT_ID" id="0122B375-88C6-168A-76CC-3D482931DF39">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_NAME" id="2FD9AD68-4611-E051-FF99-B46DF7ED8880">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="503DB4FA-D26B-71E4-0619-D68951F6DF62">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HIRE_DATE" id="6677D9B3-EC96-C4E9-B3E6-51D484761ACB">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALARY" id="78C8ED17-B0D9-AE38-B7BC-73B366FAE918">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_ID" id="82AAA7E3-D629-3C2C-183F-24C07291C286">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIRST_NAME" id="8A8FD28D-F7A0-B074-ECAF-AD5859F9210F">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="A5D2493B-5BDD-07D6-1B94-99BE32EEE076">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE_NUMBER" id="BE0D6B30-AADD-CD51-4016-225A12E669BD">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MANAGER_ID" id="EABE1FDB-559A-079B-7F95-D4D5A76287AA">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMMISSION_PCT" id="FDFC6893-56CE-ECF7-291A-224B740CCDE9">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

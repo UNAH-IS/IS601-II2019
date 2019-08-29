@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ModeloDatamartEmpleados" id="E6527092-D100-9434-99D4-F1C875DCE6AC" version="3.5">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:39:11 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E6527092-D100-9434-99D4-F1C875DCE6AC</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="B308221F-C682-9077-E624-013E2320C05F">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="4C574521-94E9-120E-E334-636A61B869A1">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="9F064509-B559-293D-D78A-07D334A51D6F">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

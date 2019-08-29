@@ -1,24 +1,24 @@
 --Crear nuevo usuario(esquema) con el password "PASSWORD" 
-CREATE USER DB_UNAH
+CREATE USER DWH_HR
   IDENTIFIED BY "oracle"
   DEFAULT TABLESPACE USERS
   TEMPORARY TABLESPACE TEMP;
 --asignar cuota ilimitada al tablespace por defecto  
-ALTER USER DB_UNAH QUOTA UNLIMITED ON USERS;
+ALTER USER DWH_HR QUOTA UNLIMITED ON USERS;
 
 --Asignar privilegios basicos
-GRANT create session TO DB_UNAH;
-GRANT create table TO DB_UNAH;
-GRANT create view TO DB_UNAH;
-GRANT create any trigger TO DB_UNAH;
-GRANT create any procedure TO DB_UNAH;
-GRANT create sequence TO DB_UNAH;
-GRANT create materialized view TO DB_UNAH;
-GRANT select any table TO DB_UNAH;
-GRANT create synonym TO DB_UNAH;
+GRANT create session TO DWH_HR;
+GRANT create table TO DWH_HR;
+GRANT create view TO DWH_HR;
+GRANT create any trigger TO DWH_HR;
+GRANT create any procedure TO DWH_HR;
+GRANT create sequence TO DWH_HR;
+GRANT create materialized view TO DWH_HR;
+GRANT select any table TO DWH_HR;
+GRANT create synonym TO DWH_HR;
 
 
-GRANT execute any procedure to DB_UNAH;
+GRANT execute any procedure to DWH_HR;
 
 
 

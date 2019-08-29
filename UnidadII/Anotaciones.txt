@@ -1,0 +1,55 @@
+ETL - Extract Transform Load
+
+Extracciones:
+    Lenguaje de programacion
+    Procedimientos almacenados (Database link)
+    Herramientas de tercerons (Integration Services, Clover ETL,...)
+
+Tipos de Extracciones:
+    *Incrementales: Generalmente se hacen por fecha y aplican las tablas cuyo historico no cambia. (Ejemplo: Ventas)
+    *Volatiles: Son las tablas que se limpian y cargan por completo. Se realizan este tipo de extracciones cuando el historico cambia. (Ejemplo: Empleados)
+    *Snapshots(foto instantanea): Guardar una copia integra de una tabla en una fecha o momento especifico. Se utilizan para realizar analisis complejos, analizar cambios de estados a traves del tiempo.
+
+DATABASE LINK:
+    Homegeneos: Entre Bases de datos ORacle:
+        Informaci�n necesaria:
+            Debe existir conexion entre ambos servidores
+            IP del servidor Origen
+            Usuario
+            Password
+            SID
+        Modificar el archivo tnsnames (En este archivo se configuran datos de conexion para bases de datos remotas)
+            Linux: /u01/app/oracle/product/11.2.0/xe/network/admin/
+            Windows: C:\oraclexe\app\oracle\product\11.2.0\server\network\ADMIN
+
+            Agregar el siguiente bloque:
+                XE_WINDOWS =
+                    (DESCRIPTION =
+                        (ADDRESS = (PROTOCOL = TCP)(HOST = 10.10.43.223)(PORT = 1521))
+                        (CONNECT_DATA =
+                        (SERVER = DEDICATED)
+                        (SERVICE_NAME = XE)
+                        )
+                    )
+
+                NOTA: XE_WINDOWS puede ser cualquier identificador, cambiar la IP por la correspondiente.
+
+            Ingresar a la base de datos destino (DWH) y crear el database link con cualquier usuario.
+
+                
+                CREATE PUBLIC DATABASE LINK REMOTE_WINDOWS
+                CONNECT TO hr IDENTIFIED BY "oracle"
+                USING 'XE_WINDOWS';
+                --Borrar un database link
+                drop database link remote_windows;
+
+                Nota: El usuario donde se creara el database link debe tener los privilegios necesarios
+                        GRANT CREATE DATABASE LINK TO USUARIO;
+
+                Para consultar una tabla remota se har�a de la siguiente manera:
+
+                SELECT *
+                FROM ESQUEMA.TABLA@NOMBRE_DBLINK;
+                SELECT *
+                FROM hr.jobs@remote_windows;
+    Heterogeneos: Entre una base de datos Oracle y otro gestor diferente

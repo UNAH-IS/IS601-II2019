@@ -1,0 +1,210 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4FD38AF-FBDA-6ADE-6014-59CA5C081EB8" schemaObject="96BE4408-030A-7A87-F6A5-5C7249B1C2F0" name="MVW_EMPLEADOS">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>MVW_EMPLEADOS</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<commentInRDBMS>snapshot table for snapshot HR.MVW_EMPLEADOS</commentInRDBMS>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>60054291-52D0-8B81-234C-AB18E05B0BF2</importedID>
+<typeID>4</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<materializedQueryTable>true</materializedQueryTable>
+<userDefinedSQL>SELECT A.EMPLOYEE_ID,&lt;br&gt;      A.FIRST_NAME||&apos; &apos;||A.LAST_NAME AS NAME,&lt;br&gt;      --A.JOB_ID,&lt;br&gt;      B.JOB_TITLE,&lt;br&gt;      --A.DEPARTMENT_ID,&lt;br&gt;      C.DEPARTMENT_NAME,&lt;br&gt;       C.LOCATION_ID,&lt;br&gt;       F.CITY,&lt;br&gt;       F.COUNTRY_ID,&lt;br&gt;       G.COUNTRY_NAME,&lt;br&gt;       G.REGION_ID,&lt;br&gt;       H.REGION_NAME,&lt;br&gt;       D.FIRST_NAME||&apos; &apos;||D.LAST_NAME AS MANAGER_NAME,&lt;br&gt;       E.FIRST_NAME||&apos; &apos;||E.LAST_NAME AS MANAGER_OF_MANAGER_NAME&lt;br&gt;&lt;br&gt;FROM EMPLOYEES A&lt;br&gt;INNER JOIN JOBS B&lt;br&gt;ON (A.JOB_ID = B.JOB_ID)&lt;br&gt;LEFT JOIN DEPARTMENTS C&lt;br&gt;on A.DEPARTMENT_ID = C.DEPARTMENT_ID&lt;br&gt;LEFT JOIN EMPLOYEES D&lt;br&gt;ON (D.EMPLOYEE_ID = A.MANAGER_ID)&lt;br&gt;LEFT JOIN EMPLOYEES E&lt;br&gt;ON (D.MANAGER_ID = E.EMPLOYEE_ID)&lt;br&gt;LEFT JOIN LOCATIONS F&lt;br&gt;ON (C.LOCATION_ID = F.LOCATION_ID)&lt;br&gt;LEFT JOIN COUNTRIES G&lt;br&gt;ON (F.COUNTRY_ID = G.COUNTRY_ID)&lt;br&gt;LEFT JOIN REGIONS H&lt;br&gt;ON (G.REGION_ID = H.REGION_ID)</userDefinedSQL>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="8CFE1B76-B221-9CA7-C58F-E40C2315629C">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>04ED3DB4-52CC-7BA1-555C-93E6F2146A59</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="BCD491D0-87E1-7E95-07C5-2FC52688F465">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>FDF94D49-EB10-53B4-8972-4469460234A4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>46 BYTE</dataTypeSize>
+<ownDataTypeParameters>46 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_TITLE" id="92C2D910-7C33-23E8-1304-4882745754FD">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>JOB_TITLE</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>6698A0DF-CA78-3725-5099-FF3AC52D20A4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 BYTE</dataTypeSize>
+<ownDataTypeParameters>35 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_NAME" id="0A7081D5-0A93-3208-2BBF-EFAC7FE5261C">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>D57CCD45-0294-5B3F-421E-CF62F73A8E1D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION_ID" id="A04B2E4D-827A-F438-75D1-52E91A72D640">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>LOCATION_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>F98BE80F-36F2-EB02-CC0F-C81FD65AFE81</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="C2861C1F-DF96-6BB5-7E04-06486D4766DC">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>CITY</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>58A01EA3-0403-A010-032D-AA5F30B05060</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_ID" id="28A4477A-2ACF-20F0-4C4E-61C72412A53A">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>COUNTRY_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>814706A3-86ED-A1F9-A17E-F31D4BF2DFD3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="CFD3D083-B9C2-2F7F-C185-7AF18B1A4E23">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>COUNTRY_NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>1003058A-FE33-0361-EC97-D33E53916D4B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_ID" id="F56A68DE-6E58-3E70-36E3-BA38CA9CB7A4">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>REGION_ID</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>2327F9A1-565C-A2A8-A2BF-7D15E131D639</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_NAME" id="895E727E-0A02-D199-CD05-7C3393799CE5">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>REGION_NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>2C70569F-2BAE-4D99-A0E7-69D151A950F7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_NAME" id="DCCD5F2C-2E4F-7D1C-844A-C6745177B9E9">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>MANAGER_NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>EFB5AC28-82BF-B5FE-FFA3-1AC6AD41FF77</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>46 BYTE</dataTypeSize>
+<ownDataTypeParameters>46 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_OF_MANAGER_NAME" id="2D51F0E5-C0D1-972F-516C-E710B81CF9EF">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>MVW_EMPLEADOS</sourceObjSchema>
+<sourceObjName>MANAGER_OF_MANAGER_NAME</sourceObjName>
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:46:01 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<importedID>6AD99D23-6185-33D7-74BF-3E40CD4D22E3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>46 BYTE</dataTypeSize>
+<ownDataTypeParameters>46 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

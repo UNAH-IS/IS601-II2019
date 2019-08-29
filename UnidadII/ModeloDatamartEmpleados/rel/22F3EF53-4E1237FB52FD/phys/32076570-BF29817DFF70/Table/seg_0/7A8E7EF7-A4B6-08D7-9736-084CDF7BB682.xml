@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMPLOYEES" directorySegmentName="seg_0" id="7A8E7EF7-A4B6-08D7-9736-084CDF7BB682">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:56 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3B99E9E3-3FD1-87C9-5E2E-E551B12416B7</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EMAIL" id="26F48FE9-6476-8058-1B37-13DDAF661570">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MANAGER_ID" id="2F1C548A-19B1-F454-BC16-E9C67675AD61">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_NAME" id="34B98269-4E5A-F9CC-42F6-FD354BE38DCB">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIRST_NAME" id="36A2D6D8-FB88-3C75-B6CB-69EB61ABAF50">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HIRE_DATE" id="4370EE39-2628-3A57-3234-C09C4878F113">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="49AA3383-53E1-052B-61A7-78761DF64711">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE_NUMBER" id="8D629307-2B12-4D20-9B90-2478542864AA">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_ID" id="8DCB6460-932E-E28F-D6DD-BEC93FFD35E1">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMMISSION_PCT" id="AC6871E8-7ED1-8CE7-8ACC-4F48FA26437D">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="BD07A7D7-82BB-77BC-D065-D8DC69B81E34">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALARY" id="E5479F68-9500-6A05-6D2E-864D7E8E54B0">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_NAME_IX" id="2D0087B7-E593-7FB5-EC27-C75A800FD0A2">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_JOB_IX" id="4F51B138-6AEC-F851-B49A-469D3375D38A">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_DEPARTMENT_IX" id="8979FA41-F454-A63B-E97E-AF07A2EA3418">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_EMP_ID_PK" id="C2B05E2C-D3BB-B768-7D16-29269B309787">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_EMAIL_UK" id="C8AC8B8F-0DFE-95F4-F0C5-3FE56F5DEA05">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_MANAGER_IX" id="FD8422D7-2306-205C-4BB8-EA1625AF84EC">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<schemaObject>96BE4408-030A-7A87-F6A5-5C7249B1C2F0</schemaObject>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_JOB_FK" id="850DF92D-76FD-D08C-7217-07400667299B">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_DEPT_FK" id="EA7F3BB7-5BB9-5C97-974D-31535580F70D">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_MANAGER_FK" id="FBA021C0-F986-5BB7-96EF-7657E70E643E">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMP_EMP_ID_PK" id="DFAC03D3-1CD9-F301-BFDE-5E1D06410CEC">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+<existingIndex>C2B05E2C-D3BB-B768-7D16-29269B309787</existingIndex>
+<indexSegment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="EMP_EMAIL_UK" id="3548C8B3-F836-4B35-B790-3B0054B3BD27">
+<createdBy>Marín</createdBy>
+<createdTime>2019-08-21 05:45:57 UTC</createdTime>
+<ownerDesignName>ModeloDatamartEmpleados</ownerDesignName>
+<segment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</segment>
+<tableSpace>4B568DE7-FF49-E4CB-0FF2-38A100606D78</tableSpace>
+<existingIndex>C8AC8B8F-0DFE-95F4-F0C5-3FE56F5DEA05</existingIndex>
+<indexSegment>18FA9D1A-9222-3D05-8178-BF643F0BD7D6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>
