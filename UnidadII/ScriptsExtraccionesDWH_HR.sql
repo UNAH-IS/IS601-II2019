@@ -119,7 +119,7 @@ create table log_etls(
 --PORQUE LA INFORMACION PUEDE VARIAR EN CUALQUIER MOMENTO
 CREATE OR REPLACE PROCEDURE P_ETL_JOBS AS
     V_HORA_INICIO TIMESTAMP;
-      V_COMENTARIO VARCHAR2(2000);
+    V_COMENTARIO VARCHAR2(2000);
 BEGIN
   ----AQUI INICIA
   V_HORA_INICIO := SYSTIMESTAMP;
@@ -216,3 +216,145 @@ end;
 
 
 select * from ALL_SCHEDULER_JOBS;
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+----EXTRACCION DEPARTAMENTOS
+create or replace procedure p_etl_departments
+as
+    V_HORA_INICIO TIMESTAMP;
+    V_COMENTARIO VARCHAR2(2000);
+begin
+   ----AQUI INICIA
+  V_HORA_INICIO := SYSTIMESTAMP;
+  EXECUTE IMMEDIATE 'TRUNCATE TABLE DEPARTMENTS';
+  insert into DEPARTMENTS (
+          DEPARTMENT_ID,
+          DEPARTMENT_NAME,
+          MANAGER_ID,
+          LOCATION_ID,
+          STREET_ADDRESS,
+          POSTAL_CODE,
+          CITY,
+          STATE_PROVINCE,
+          COUNTRY_ID,
+          COUNTRY_NAME,
+          REGION_ID,
+          REGION_NAME
+  )
+  select a.DEPARTMENT_ID,
+          a.DEPARTMENT_NAME,
+          a.MANAGER_ID,
+          a.LOCATION_ID,
+          b.STREET_ADDRESS,
+          b.POSTAL_CODE,
+          b.CITY,
+          b.STATE_PROVINCE,
+          b.COUNTRY_ID,
+          c.COUNTRY_NAME,
+          c.REGION_ID,
+          d.REGION_NAME
+  from hr.departments@remote_windows a
+  left join hr.locations@remote_windows b
+  on (a.LOCATION_ID = b.LOCATION_ID)
+  left join hr.countries@remote_windows c
+  on (b.country_id = c.country_id)
+  left join hr.regions@remote_windows d
+  on (c.region_id = d.region_id);
+
+  INSERT INTO LOG_ETLS (
+      nombre_etl,
+      fecha_hora_inicio,
+      fecha_hora_fin ,
+      estado_ejecucion,
+      comentario
+  )
+  VALUES (
+    'P_ETL_DEPARTMENTS',
+    V_HORA_INICIO,
+    SYSTIMESTAMP,
+    'S',
+    'EXTRACCION FINALIZADA CON EXITO'
+  );
+  COMMIT;
+  EXCEPTION
+  WHEN OTHERS THEN
+    V_COMENTARIO :='EXTRACCION FINALIZADA CON ERROR '||SQLERRM;
+      ROLLBACK;
+      INSERT INTO LOG_ETLS (
+          nombre_etl,
+          fecha_hora_inicio,
+          fecha_hora_fin ,
+          estado_ejecucion,
+          comentario
+      )
+      VALUES (
+        'P_ETL_DEPARTMENTS',
+        V_HORA_INICIO,
+        SYSTIMESTAMP,
+        'N',
+        V_COMENTARIO
+      );
+      COMMIT;
+end;
+
+
+
+-- intervalo cada minuto
+begin
+  dbms_scheduler.create_schedule(
+      schedule_name => 'INTERVALO_CADA_MINUTO',
+      start_date => SYSTIMESTAMP + INTERVAL '1' MINUTE,
+      repeat_interval => 'freq=MINUTELY;interval=1',
+      comments => 'Ejecucion: cada minuto'
+  );
+end;
+
+select * from LOG_ETLS;
+
+select *
+from ALL_SCHEDULER_SCHEDULES;
+
+begin
+  dbms_scheduler.create_job (
+    job_name => 'ETL_JOBS',
+    job_type => 'PLSQL_BLOCK',
+    job_action => 'begin p_etl_jobs(); end;',
+    number_of_arguments => 0,
+    --start_date => systimestamp + interval '1' minute, -- sysdate + 10 minutos
+    job_class => 'DEFAULT_JOB_CLASS', -- Priority Group
+    enabled => TRUE,
+    auto_drop => false,
+    comments => 'Tarea calendarizada para extraer la información de la tabla de JOBS del esquema HR',
+    schedule_name => 'INTERVALO_CADA_MINUTO'
+  );
+end;
+
+
+begin
+  dbms_scheduler.create_job (
+    job_name => 'ETL_DEPARTMENTS',
+    job_type => 'PLSQL_BLOCK',
+    job_action => 'begin p_etl_departments(); end;',
+    number_of_arguments => 0,
+    --start_date => systimestamp + interval '1' minute, -- sysdate + 10 minutos
+    job_class => 'DEFAULT_JOB_CLASS', -- Priority Group
+    enabled => TRUE,
+    auto_drop => false,
+    comments => 'Tarea calendarizada para extraer la información de la tabla de DEPARTMENTS del esquema HR',
+    schedule_name => 'INTERVALO_CADA_MINUTO'
+  );
+end;
+
+
+SELECT *
+FROM ALL_SCHEDULER_JOBS;
+
+SELECT *
+FROM LOG_ETLS;
+
+
+SELECT *
+FROM DWH_HR.DEPARTMENTS;
